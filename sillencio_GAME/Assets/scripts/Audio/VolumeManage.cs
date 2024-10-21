@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class VolumeManage : MonoBehaviour
 {
+    //vi o pedro na matte com a ex dele
     public GameObject pointer; // O GameObject que será rotacionado
     public float volume = 0f; // O nível do volume (0 a 1)
     public float rotationMin = 0f; // Rotação mínima (0 graus)
