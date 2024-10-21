@@ -16,7 +16,7 @@ public class StateMental : MonoBehaviour
         estresse += Time.deltaTime * addEstresse;
 
         //vibração
-        float estresseRotation = estresse/5;
+        float estresseRotation = estresse/3;
         ObjFoco.transform.rotation = Quaternion.Euler(0,0,Random.Range(-estresseRotation,estresseRotation));
         ObjFoco.GetComponent<Graphic>().color = new Color(1,1,1,estresse/5);
         //volume da respiração
