@@ -150,7 +150,6 @@ MonoBehaviour:
   Path: ../silencio_FMOD/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638651183182367152
   lastModified: 638638455911238528
   FileSizes:
   - Name: Desktop
@@ -182,7 +181,6 @@ MonoBehaviour:
   - {fileID: -2581299121034037817}
   StringsBanks:
   - {fileID: 5618495322401188055}
-  cacheTime: 638651183182367152
   cacheTime: 638638455913022446
   cacheVersion: 131620
 --- !u!114 &5618495322401188055
@@ -200,7 +198,6 @@ MonoBehaviour:
   Path: ../silencio_FMOD/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638651183182367152
   lastModified: 638638455913022446
   FileSizes:
   - Name: Desktop
