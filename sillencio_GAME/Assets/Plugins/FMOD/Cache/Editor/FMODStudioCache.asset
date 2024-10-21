@@ -168,6 +168,7 @@ MonoBehaviour:
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   EditorBanks:
+  - {fileID: 5618495322401188055}
   - {fileID: -2581299121034037817}
   EditorEvents:
   - {fileID: -4231928197861531147}
