@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="MixerGroup" id="{acfe3b13-9a86-4fae-b22a-cdab6122d2e2}">
+		<property name="name">
+			<value>respiração</value>
+		</property>
+		<relationship name="effectChain">
+			<destination>{b157f22e-7565-4e7c-8685-260c4517fbcb}</destination>
+		</relationship>
+		<relationship name="panner">
+			<destination>{96670f0a-fb96-469b-bb3a-31e8e01eca50}</destination>
+		</relationship>
+		<relationship name="output">
+			<destination>{bd3acc3f-0f9f-42d7-a19c-99cf5e4f6abe}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusEffectChain" id="{b157f22e-7565-4e7c-8685-260c4517fbcb}">
+		<relationship name="effects">
+			<destination>{9a1244c4-cb17-4f9c-8513-9a0991ebbaaa}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusPanner" id="{96670f0a-fb96-469b-bb3a-31e8e01eca50}" />
+	<object class="MixerBusFader" id="{9a1244c4-cb17-4f9c-8513-9a0991ebbaaa}" />
+</objects>

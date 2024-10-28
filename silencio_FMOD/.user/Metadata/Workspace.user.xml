@@ -9,6 +9,12 @@
 		</relationship>
 	</object>
 	<object class="ProjectSettings" id="{2e5ee13e-2dae-441a-ab90-037a2e348c97}">
+		<property name="openWindows">
+			<value>Mixer 1</value>
+		</property>
+		<property name="windowLayout">
+			<value>AAAAAwAAABIAUwBhAG4AZABiAG8AeAAgADEAAABCAdnQywADAAD/////////+AAABVYAAALYAAABawAAAHwAAAVRAAAB9AAAAAACAAAABVYAAAAAAAAAFwAABVUAAALXAAAADgBNAGkAeABlAHIAIAAxAAAAQgHZ0MsAAwAA//////////gAAAVWAAAC2AAAAWsAAAB8AAAE+AAAAtYAAAAAAgAAAAVWAAAAAAAAABcAAAVVAAAC1wAAABwARQB2AGUAbgB0ACAARQBkAGkAdABvAHIAIAAxAAAAQgHZ0MsAAwAA//////////gAAAVWAAAC2AAAAWsAAAB8AAAFQQAAAh8AAAAAAgAAAAVWAAAAAAAAABcAAAVVAAAC1w==</value>
+		</property>
 		<relationship name="activePlatform">
 			<destination>{37283f49-6b7b-400a-bab8-6fd5ce8cf5a1}</destination>
 		</relationship>
