@@ -43,6 +43,7 @@ public class MovPlayer : MonoBehaviour
         ani.SetBool("showEstresse",false);
     }
 
+   
     private void OnMove(InputValue  value)
     {
         horizontal = value.Get<Vector2>().x;

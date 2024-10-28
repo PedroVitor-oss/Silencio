@@ -28,7 +28,7 @@ public class VolumeManage : MonoBehaviour
     void ChangeVolume(float amount)
     {
         volume = Mathf.Clamp(volume + amount, 0f, 1f); // Limitar volume entre 0 e 1
-        AudioManager.instance.SetVolume(volume);
+        AudioManager.instance.SetVolume(volume,"master");
     }
 
     // Função para rotacionar o GameObject baseado no volume

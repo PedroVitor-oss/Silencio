@@ -20,5 +20,15 @@ public class Inventario : MonoBehaviour {
             }
         }
     }
+    public bool ImHasImte(string name){
+        for (int i = inventarioNames.Count - 1; i >= 0; i--)
+        {
+            if (inventarioNames[i].Contains(name))
+            {
+                return true;
+            }
+        }
+        return false;
+    }
     
 }

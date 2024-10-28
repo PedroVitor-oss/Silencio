@@ -15,11 +15,65 @@ MonoBehaviour:
   Path: ../silencio_FMOD/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638656269470609200
+  lastModified: 638657267765748427
   FileSizes:
   - Name: Desktop
-    Value: 6054
+    Value: 3314336
   Exists: 1
+--- !u!114 &-2855174580600898163
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/piano jazz improvisation
+  m_EditorClassIdentifier: 
+  Path: event:/piano jazz improvisation
+  Guid:
+    Data1: -138949883
+    Data2: 1093623060
+    Data3: 149163454
+    Data4: -563938
+  Banks:
+  - {fileID: -4939758824138415371}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 135105
+--- !u!114 &-1839964080499233674
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/drop
+  m_EditorClassIdentifier: 
+  Path: event:/drop
+  Guid:
+    Data1: 1059846685
+    Data2: 1210671609
+    Data3: 1286315664
+    Data4: -54965873
+  Banks:
+  - {fileID: -4939758824138415371}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 79
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35,14 +89,132 @@ MonoBehaviour:
   EditorBanks:
   - {fileID: 4204670914821955422}
   - {fileID: -4939758824138415371}
-  EditorEvents: []
+  EditorEvents:
+  - {fileID: -2855174580600898163}
+  - {fileID: -1839964080499233674}
+  - {fileID: 932265853310038849}
+  - {fileID: 2910130278472693441}
+  - {fileID: 5302902828586324683}
+  - {fileID: 8651630692721130999}
+  - {fileID: 3484614288284425240}
+  - {fileID: 1670323135538388838}
+  - {fileID: 5223397670871723925}
+  - {fileID: 5795107388298047813}
   EditorParameters: []
   MasterBanks:
   - {fileID: -4939758824138415371}
   StringsBanks:
   - {fileID: 4204670914821955422}
-  cacheTime: 0
+  cacheTime: 638657267765858373
   cacheVersion: 131620
+--- !u!114 &932265853310038849
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/maquina de escrever
+  m_EditorClassIdentifier: 
+  Path: event:/maquina de escrever
+  Guid:
+    Data1: 1391750237
+    Data2: 1198393189
+    Data3: 75306420
+    Data4: 1947244870
+  Banks:
+  - {fileID: -4939758824138415371}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1000
+--- !u!114 &1670323135538388838
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/queda de energia
+  m_EditorClassIdentifier: 
+  Path: event:/queda de energia
+  Guid:
+    Data1: -741768008
+    Data2: 1303753836
+    Data3: 1501313951
+    Data4: 97645451
+  Banks:
+  - {fileID: -4939758824138415371}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1816
+--- !u!114 &2910130278472693441
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/step
+  m_EditorClassIdentifier: 
+  Path: event:/step
+  Guid:
+    Data1: 890378407
+    Data2: 1096077558
+    Data3: -1377493880
+    Data4: 1550529847
+  Banks:
+  - {fileID: -4939758824138415371}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 310
+--- !u!114 &3484614288284425240
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/guitarSound
+  m_EditorClassIdentifier: 
+  Path: event:/guitarSound
+  Guid:
+    Data1: -1821005005
+    Data2: 1256728823
+    Data3: -739699559
+    Data4: -1561000201
+  Banks:
+  - {fileID: -4939758824138415371}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 3061
 --- !u!114 &4204670914821955422
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -58,8 +230,116 @@ MonoBehaviour:
   Path: ../silencio_FMOD/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638656172300171070
+  lastModified: 638657267765858373
   FileSizes:
   - Name: Desktop
-    Value: 944
+    Value: 1296
   Exists: 1
+--- !u!114 &5223397670871723925
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/reporter
+  m_EditorClassIdentifier: 
+  Path: event:/reporter
+  Guid:
+    Data1: 1749088513
+    Data2: 1080380440
+    Data3: 1186194090
+    Data4: -2117489608
+  Banks:
+  - {fileID: -4939758824138415371}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 132813
+--- !u!114 &5302902828586324683
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/tic tac
+  m_EditorClassIdentifier: 
+  Path: event:/tic tac
+  Guid:
+    Data1: -878954302
+    Data2: 1339014130
+    Data3: 1086779564
+    Data4: -876030863
+  Banks:
+  - {fileID: -4939758824138415371}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 5955
+--- !u!114 &5795107388298047813
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: "event:/respirac\xE3o"
+  m_EditorClassIdentifier: 
+  Path: "event:/respirac\xE3o"
+  Guid:
+    Data1: -1355573708
+    Data2: 1195537436
+    Data3: -905945962
+    Data4: -1177590793
+  Banks:
+  - {fileID: -4939758824138415371}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 5969
+--- !u!114 &8651630692721130999
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/noiseRAdio
+  m_EditorClassIdentifier: 
+  Path: event:/noiseRAdio
+  Guid:
+    Data1: -563229646
+    Data2: 1184762672
+    Data3: 376667539
+    Data4: 305376356
+  Banks:
+  - {fileID: -4939758824138415371}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1087

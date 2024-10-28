@@ -8,6 +8,7 @@ public class LookCam : MonoBehaviour
     public float mouseSencitify = 100f;
     public Transform playerBody;
     public Transform transformCam;
+    public GameObject LightLanterna;
     float  xRotation;
     Vector2 deltaMouse;
 
@@ -25,7 +26,7 @@ public class LookCam : MonoBehaviour
     private Vector3 originalPos;
     public Vector3 offset;
 
-
+    public bool usingLanterna = false;
 
      private void Awake()
     {
@@ -84,7 +85,19 @@ public class LookCam : MonoBehaviour
         }
         
     }
-    
+     private void OnUseLanterna(){
+        if(GetComponent<Inventario>().ImHasImte("lanterna")){
+            if(!usingLanterna){
+                GameObject lanterna = Instantiate(LightLanterna, transformCam.position + (transformCam.up * -2), Quaternion.Euler(0,0,0));
+                lanterna.transform.SetParent(transformCam);
+                lanterna.transform.rotation = Quaternion.Euler(0,0,0);
+
+            }else{
+                  Destroy(GameObject.Find("LightLanterna"));
+            }
+
+        }
+    }
     private void VibrarCam(){
         
         float shakeAmount = mental.nivelEstresse()/100;

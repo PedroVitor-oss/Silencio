@@ -20,6 +20,9 @@ public class PlayerInteraction : MonoBehaviour
     public StateMental mental;
     public Inventario invetario;
     public GameObject textLanterna;
+
+    public EventReference QuedaDaLuzSound;
+    public EventReference RuidoRadioSound;
     void Start()
     {
         cam = Camera.main;
@@ -36,7 +39,9 @@ public class PlayerInteraction : MonoBehaviour
     {
         RaycastHit hit;
         // Vector2 rayOrigin  = cam.ViewportToWorldPoint(new Vector3( 0.5f,0.5f,0.5f));
-        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+Vector3 screenCenter = new Vector3(Screen.width / 2, Screen.height / 2, 0);
+Ray ray = Camera.main.ScreenPointToRay(screenCenter);
+
 
         if(Physics.Raycast(ray,out hit))
         {
@@ -84,9 +89,9 @@ public class PlayerInteraction : MonoBehaviour
                             case 2://iniciar musica do radio
                                 Debug.Log("iniciar Musica do radio");
                               
- 
-                                Destroy(interable.gameObject,10.0f);
-                                Invoke("MoreEstress",10.0f);
+                                float timeDestroy = 40.0f;
+                                Destroy(interable.gameObject,timeDestroy);
+                                Invoke("MoreEstress",timeDestroy);
                                 AudioManager.instance.PlayEvent(interable.item.soundEvent,transform.position);
 
 
@@ -120,12 +125,22 @@ public class PlayerInteraction : MonoBehaviour
                                 break;
                                 case 6://ligar a tv
                                     interable.gameObject.GetComponent<TelevisaoManage>().LigarTv();
+                                    AudioManager.instance.PlayEvent(interable.item.soundEvent,transform.position);
+                                    mental.SetAddEstresse(0.005f);
                                     //inciar 
+                                    Invoke("DesligarLuz",50.0f);
                                     break;
                                 case 7://abrir gavate
                                   
                                     StartCoroutine(MovingItem(interable,    interable.gameObject.transform.position +    Vector3.forward,interable.transform.parent,false,interable.transform.parent,new Vector3(-90,0,90)));
                                     
+                                    break;
+                                case 8://ligar a tv
+                                  
+                                    AudioManager.instance.PlayEvent(interable.item.soundEvent,transform.position);
+                                    mental.SetAddEstresse(0.005f);
+                                    //inciar 
+                                    Invoke("LigarLuz",0.1f);
                                     break;
 
                         }
@@ -169,6 +184,32 @@ public class PlayerInteraction : MonoBehaviour
         takeItem = false;
     }
     private void MoreEstress(){
-        mental.SetAddEstresse(0.01f);
+        mental.SetAddEstresse(0.03f);
+        AudioManager.instance.SetVolume(0,"musica");
+        AudioManager.instance.PlayEvent(RuidoRadioSound,transform.position);
+    }
+    private void DesligarLuz(){
+      
+        Light[] lights = FindObjectsOfType<Light>();
+        AudioManager.instance.PlayEvent(QuedaDaLuzSound,transform.position);
+        AudioManager.instance.SetVolume(1,"tv");
+
+        foreach (Light light in lights)
+        {
+            mental.SetAddEstresse(0.05f);
+            light.enabled = false;
+        }
+        
+    }
+    private void LigarLuz(){
+      
+        Light[] lights = FindObjectsOfType<Light>();
+        AudioManager.instance.PlayEvent(QuedaDaLuzSound,transform.position);
+        foreach (Light light in lights)
+        {
+            mental.SetAddEstresse(0.05f);
+            light.enabled = true;
+        }
+        
     }
 }

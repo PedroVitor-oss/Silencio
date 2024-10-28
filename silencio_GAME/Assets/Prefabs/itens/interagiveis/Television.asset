@@ -16,10 +16,10 @@ MonoBehaviour:
   collect: 0
   soundEvent:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 1749088513
+      Data2: 1080380440
+      Data3: 1186194090
+      Data4: -2117489608
+    Path: event:/reporter
   text: "televis\xE3o"
   indexFunction: 6

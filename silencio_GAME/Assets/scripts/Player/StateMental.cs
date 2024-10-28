@@ -16,11 +16,11 @@ public class StateMental : MonoBehaviour
         estresse += Time.deltaTime * addEstresse;
 
         //vibração
-        float estresseRotation = estresse/5;
+        float estresseRotation = estresse/2.5f;
         ObjFoco.transform.rotation = Quaternion.Euler(0,0,Random.Range(-estresseRotation,estresseRotation));
         ObjFoco.GetComponent<Graphic>().color = new Color(1,1,1,estresse/5);
         //volume da respiração
-        AudioManager.instance.SetVolumeEstresse(estresse/5);
+        AudioManager.instance.SetVolume(estresse/5,"estresse");
 
           if(estresse/5 >= 1){
                //fim de game 
