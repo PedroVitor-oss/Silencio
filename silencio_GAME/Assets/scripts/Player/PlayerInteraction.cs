@@ -83,6 +83,11 @@ Ray ray = Camera.main.ScreenPointToRay(screenCenter);
                                     AudioManager.instance.PlayEvent(interable.item.soundEvent,transform.position);
                                     StartCoroutine(MovingItem(currrentIterable,    interable.gameObject.GetComponent<Estante>().GetPositionBook(),interable.transform));
                                     interable.gameObject.GetComponent<Estante>().DropBoock();
+
+                                    if(currrentIterable.item.text == "panela")
+                                    {
+                                        currrentIterable.GetComponent<PanelaControler>().ColocarNoFogao();
+                                    }
                                     currrentIterable = null;
                                 }
                             break;

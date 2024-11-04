@@ -10,11 +10,18 @@ public class Estante : MonoBehaviour
     public float heightBoock;
     private int inBookcase = 0;
     public Transform estanteTransform;
+    public bool complet = false;
     void Start(){
     }
 
     public void DropBoock(){
         inBookcase ++;
+
+        if(inBookcase>= minBocks)
+        {
+            complet = true;
+        }
+
     }
 
     public Vector3 GetPositionBook(){

@@ -22,7 +22,7 @@ public class StateMental : MonoBehaviour
         //volume da respiração
         AudioManager.instance.SetVolume(estresse/5,"estresse");
 
-          if(estresse/5 >= 1){
+          if(estresse/1.5f >= 1){
                //fim de game 
                menuManage.FimGame();
           }
