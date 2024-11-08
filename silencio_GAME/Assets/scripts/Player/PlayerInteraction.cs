@@ -39,8 +39,8 @@ public class PlayerInteraction : MonoBehaviour
     {
         RaycastHit hit;
         // Vector2 rayOrigin  = cam.ViewportToWorldPoint(new Vector3( 0.5f,0.5f,0.5f));
-Vector3 screenCenter = new Vector3(Screen.width / 2, Screen.height / 2, 0);
-Ray ray = Camera.main.ScreenPointToRay(screenCenter);
+        Vector3 screenCenter = new Vector3(Screen.width / 2, Screen.height / 2, 0);
+        Ray ray = Camera.main.ScreenPointToRay(screenCenter);
 
 
         if(Physics.Raycast(ray,out hit))
@@ -114,11 +114,14 @@ Ray ray = Camera.main.ScreenPointToRay(screenCenter);
                             case 4://colocar roupa no guardaroupa
                                 Debug.Log("colocar rolpas no guarda roupa");
                                 
-                                Vector3 pos = interable.gameObject.GetComponent<Estante>().GetPositionBook();
-                                 if (roupaPrefab != null && invetario.QuantItem()>0)
+                                if (roupaPrefab != null && invetario.QuantItem()>0)
                                 {
-                                    invetario.removeItens("Roupa");
-                                    Instantiate(roupaPrefab,pos, Quaternion.identity);
+                                    int quantItens =  invetario.removeItens("Roupa");
+                                    for(int i =0;i<quantItens;i++){
+                                        interable.gameObject.GetComponent<Estante>().DropBoock();
+                                        Vector3 pos = interable.gameObject.GetComponent<Estante>().GetPositionBook();
+                                        Instantiate(roupaPrefab,pos, Quaternion.identity);
+                                    }
                                 }
                                 else
                                 {

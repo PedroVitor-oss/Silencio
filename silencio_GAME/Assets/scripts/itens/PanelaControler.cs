@@ -14,6 +14,7 @@ public class PanelaControler : MonoBehaviour
     public float timer = 5;
     private float maxTimer = 5;
     public float heightTimerUI = 1;
+    public bool complet = false;
 
 
     void Start()
@@ -23,10 +24,15 @@ public class PanelaControler : MonoBehaviour
 
     public void Update()
     {
-        if (fireObj.active)
+        if (fireObj.active && timer>0)
         {
             timer -= Time.deltaTime;
             timerFill.fillAmount  = timer/maxTimer;
+        }
+
+        if(timer<=0)
+        {
+            complet = true;
         }
 
         // Primeiro, obtenha o componente RectTransform do seu canvas

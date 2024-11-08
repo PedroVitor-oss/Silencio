@@ -11,14 +11,17 @@ public class Inventario : MonoBehaviour {
     public int QuantItem(){
         return inventarioNames.Count;
     }
-    public void removeItens(string name){
+    public int removeItens(string name){
+        int quantItenRemovidos = 0;
        for (int i = inventarioNames.Count - 1; i >= 0; i--)
         {
             if (inventarioNames[i].Contains(name))
-            {
+            {   
+                quantItenRemovidos++;
                 inventarioNames.RemoveAt(i);
             }
         }
+        return quantItenRemovidos;
     }
     public bool ImHasImte(string name){
         for (int i = inventarioNames.Count - 1; i >= 0; i--)

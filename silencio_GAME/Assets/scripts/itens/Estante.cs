@@ -7,7 +7,9 @@ public class Estante : MonoBehaviour
     // Start is called before the first frame update
 
     public int minBocks = 4;
+    [Header("offset")]
     public float heightBoock;
+    public Vector3 offset;
     private int inBookcase = 0;
     public Transform estanteTransform;
     public bool complet = false;
@@ -26,7 +28,7 @@ public class Estante : MonoBehaviour
 
     public Vector3 GetPositionBook(){
         Vector3 pos = estanteTransform.position;
-        pos.y = pos.y + inBookcase * heightBoock;
+        pos += offset * ( inBookcase * heightBoock ) ;
         return pos;
     }
 }

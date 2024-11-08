@@ -17,6 +17,9 @@ public class MenuManage : MonoBehaviour
         }
     }
 
+    public void WinGame(){
+        LoadSceneWithDelay("WinGame");
+    }
     public void FimGame(){
         LoadSceneWithDelay("GameOver");
     }

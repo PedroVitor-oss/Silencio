@@ -5,7 +5,10 @@ using UnityEngine;
 public class GameControler : MonoBehaviour
 {
    public Estante[] estantes;
+   public PanelaControler panela;
    public int quantObjetivo;
+      public MenuManage menuManage;
+
 
    void Start(){
     quantObjetivo = estantes.Length;
@@ -14,12 +17,23 @@ public class GameControler : MonoBehaviour
 
    void Update(){
     int objetivosCompletos = 0;
-    for(int i =0;i<quantObjetivo;i++){
-        if(estantes[i].complet) 
-            objetivosCompletos++;
 
-    }
-    if(objetivosCompletos == quantObjetivo)
-        Debug.Log("Todos os objetivos completos");
+        for (int i = 0; i < quantObjetivo; i++)
+        {
+            if (estantes[i] != null && estantes[i].complet)
+                objetivosCompletos++;
+        }
+
+        if (panela.complet)
+        {
+            Debug.Log("Panela completa");
+        }
+
+        if (objetivosCompletos == quantObjetivo && panela.complet)
+        {
+            Debug.Log("Todos os objetivos completos, incluindo a panela. Carregando cena de final de jogo...");
+            menuManage.WinGame();
+            
+        }
    }
 }
