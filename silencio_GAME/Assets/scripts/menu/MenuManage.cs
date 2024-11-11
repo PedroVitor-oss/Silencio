@@ -13,7 +13,7 @@ public class MenuManage : MonoBehaviour
 
         LoadSceneWithDelay("Menu");
         }else{
-            Sair();
+            //Sair();
         }
     }
 
@@ -59,5 +59,6 @@ public class MenuManage : MonoBehaviour
     }
      public void  Sair(){
      Application.Quit();
+     Debug.Log("fechar jogo");
    }
 }

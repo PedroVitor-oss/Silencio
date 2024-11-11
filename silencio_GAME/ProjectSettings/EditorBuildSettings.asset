@@ -6,7 +6,7 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Menu.unity
+    path: Assets/Scenes/menu.unity
     guid: 60a5435c2b78fc941886d245ddff380d
   - enabled: 1
     path: Assets/Scenes/GameOver.unity
@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Creditos.unity
     guid: 5bd1a2cc3e4508545b3108268ce5c8d4
+  - enabled: 1
+    path: Assets/Scenes/WinGame.unity
+    guid: 772bfafb0243dbc40a2f5d644e16cd59
   m_configObjects: {}

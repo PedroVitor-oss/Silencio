@@ -4643,7 +4643,7 @@ MonoBehaviour:
       Data4: -876030863
     Path: event:/tic tac
   Event: 
-  EventPlayTrigger: 2
+  EventPlayTrigger: 1
   EventStopTrigger: 0
   AllowFadeout: 1
   TriggerOnce: 0
