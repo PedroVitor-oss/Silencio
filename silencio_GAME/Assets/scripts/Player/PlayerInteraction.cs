@@ -150,6 +150,9 @@ public class PlayerInteraction : MonoBehaviour
                                     //inciar 
                                     Invoke("LigarLuz",0.1f);
                                     break;
+                                    case 9 :// torneira
+                                        interable.GetComponent<ParticleSystem>().Play();
+                                        break;
 
                         }
                     }
